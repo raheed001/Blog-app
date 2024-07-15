@@ -1,8 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
+#Installing Node.js (use the link below)
+```
+https://nodejs.org/en/download/package-manager/
+```
+#If creating a new app in next js use 
+```
+npx create-next-app name-of-your-app
+cd name-of-your-app
+```
 
-First, run the development server:
+#If Cloning this repo
+```
+git clone https://github.com/raheed001/Blog-app/
+cd Blog-app
+```
+
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +30,47 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Have used Material UI for CSS as well as Other trending technologies like bootstrap and tailwind CSS
+```
+npm install @mui/material @emotion/react @emotion/styled
+```
+#Material UI uses Emotion as its default styling engine. If you want to use styled-components instead, run one of the following commands:
+```
+npm install @mui/material @mui/styled-engine-sc styled-components
+```
 
-## Learn More
+#Install Bootstarp
+```
+npm i bootstrap
+```
+#Install Step by step 
+```
+npm install -D tailwindcss
+npx tailwindcss init
+```
+Configure your template paths
+Add the paths to all of your template files in your tailwind.config.js file.
+```
+tailwind.config.js
 
-To learn more about Next.js, take a look at the following resources:
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+#Add the Tailwind directives to your CSS
+#Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
+```
+src/input.css
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+## Optional
+Go to Extentions in vs code and install ES7+ React/Redux/React-Native snippets Extension for faster coding and Tailwind CSS IntelliSense to get automated intelisence when typing tailwind related code
