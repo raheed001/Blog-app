@@ -71,7 +71,7 @@ export default function DrawerAppBar(props: Props) {
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             
-            <Link href="/">Blogs </Link>
+            <Link href="/">Blogs by Aoary </Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <div className='flex space-x-6'>

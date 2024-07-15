@@ -25,7 +25,7 @@ const HomePage = async () => {
       <ResponsiveAppBar />
       <Container>
         <Typography variant="h2" gutterBottom>
-          Blog Posts
+          Blogs
         </Typography>
         <Grid container spacing={3}>
           {posts.map(post => (
